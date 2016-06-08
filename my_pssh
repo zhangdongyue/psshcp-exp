@@ -1,0 +1,12 @@
+#!/bin/sh 
+
+if [ $# -lt 2 ]
+then
+	echo "Usage xxx <host.lst> <cmd>"
+	exit
+fi
+
+while read line 
+do 
+	./ssh.exp $line "$2"
+done < $1

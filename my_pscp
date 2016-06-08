@@ -1,0 +1,12 @@
+#!/bin/sh 
+
+if [ $# -lt 3 ]
+then
+	echo "Usage xxx <host.lst> <localfile> <remotepath>"
+	exit
+fi
+
+while read line 
+do 
+	./scp.exp $2 $line:$3
+done < $1

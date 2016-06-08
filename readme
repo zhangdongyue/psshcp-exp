@@ -1,0 +1,12 @@
+#readme
+#the script based expect/tcl
+
+First to run gen.sh <your_login_password>
+
+then
+
+Use my_pssh/my_pscp :
+
+my_pssh <host list> <cmd>
+
+my_pscp <host list> <local file/dir> <remote dir>
